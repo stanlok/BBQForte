@@ -1,0 +1,70 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "/",
+  "type": "object",
+  "properties": {
+    "userID": {
+      "id": "userID",
+      "type": "string"
+    },
+    "game": {
+      "id": "game",
+      "type": "string"
+    },
+    "imageURL": {
+      "id": "imageURL",
+      "type": "string"
+    },
+    "title": {
+      "id": "title",
+      "type": "string"
+    },
+    "author": {
+      "id": "author",
+      "type": "string"
+    },
+    "votes": {
+      "id": "votes",
+      "type": "array",
+      "items": []
+    },
+    "genre": {
+      "id": "genre",
+      "type": "string"
+    },
+    "description": {
+      "id": "description",
+      "type": "string"
+    },
+    "spotify_id": {
+      "id": "spotify_id",
+      "type": "string"
+    },
+    "spotify_author": {
+      "id": "spotify_author",
+      "type": "string"
+    },
+    "url": {
+      "id": "url",
+      "type": "string"
+    },
+    "uri": {
+      "id": "uri",
+      "type": "string"
+    },
+    "songs": {
+      "id": "songs",
+      "type": "array",
+      "items": []
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "userID",
+    "author",
+    "title",
+    "game",
+    "genre",
+    "description"
+  ]
+}

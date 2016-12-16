@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "/",
+  "type": "object",
+  "properties": {
+    "spotify_id": {
+      "id": "spotify_id",
+      "type": "string"
+    },
+    "title": {
+      "id": "title",
+      "type": "string"
+    },
+    "artist": {
+      "id": "artist",
+      "type": "string"
+    },
+    "album": {
+      "id": "album",
+      "type": "string"
+    },
+    "uri": {
+      "id": "uri",
+      "type": "string"
+    },
+    "duration": {
+      "id": "duration",
+      "type": "integer"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "spotify_id",
+    "title",
+    "artist",
+    "album",
+    "uri",
+    "duration"
+  ]
+}

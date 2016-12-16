@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>BBQ Forte</title>
+
+  <!-- Bootstrap's CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Our BBQ Forte layout will go here. -->
+
+  <!-- Skeleton Code given in workshop 3: Navigation Bar-->
+  <nav class="navbar navbar-fixed-top navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          <span><img src="img/logo-xsmall.png" alt="BBQ Forte Logo"></span> BBQ Forte
+        </a>
+      </div>
+
+      <!-- On mobile, this div is hidden by default. The user hits the button
+      in the `navbar-header` to see the content of the div.
+      On desktop, this div is visible all of the time. -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+        <!-- Left-aligned items. -->
+        <div class="nav navbar-nav navbar-left">
+
+        </div>
+
+        <!-- Center items. -->
+
+        <!-- Right-aligned items. -->
+        <ul class="nav navbar-nav navbar-right">
+          <div class="btn-group" role="group">
+            <button type="button" class="btn btn-default message-button navbar-btn">
+              <span class="glyphicon glyphicon-envelope"></span>
+            </button>
+            <button type="button" class="btn btn-default dropdown-toggle navbar-btn" data-toggle="dropdown">
+              Hello, Username! <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="#">Profile</a></li>
+              <li><a href="#">Settings</a></li>
+              <li><a href="#">Log out</a></li>
+            </ul>
+          </div>
+          <!-- <div class="navbar-text">
+          Hello, Username!
+        </div> -->
+      </ul>
+
+      <form class="navbar-form" role="search">
+        <div class="form-group">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search BBQ Forte">
+            <span class="input-group-addon">
+              <!-- <button type="submit" class="btn btn-default"> -->
+              <span class="glyphicon glyphicon-search"></span>
+              <!-- </button> -->
+            </span>
+          </div>
+        </div>
+      </form>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container -->
+</nav>
+
+<div id="main-content" class="container-fluid">
+  <div class = "row">
+  <!-- Left sidebar -->
+    <div class="col-md-2 sidebar-separator">
+      <ul class="nav nav-pills nav-stacked sidebar-text">
+        <li role="presentation"><a href="#">Username</a></li>
+        <li role="presentation"><span class="glyphicon glyphicon-th-list"></span> BROWSE PLAYLISTS</li>
+        <li role="presentation">
+          <a href="playlist.html">Your Saved Playlists</a>
+        </li>
+        <li role="presentation">
+          <a href="#">New Releases</a>
+        </li>
+        <li role="presentation">
+          <a href="#">Most Popular</a>
+        </li>
+        <li role="presentation">
+          <a href="#">Highest Rated</a>
+        </li>
+        <li role="presentation">
+          <a href="#">Rising</a>
+        </li>
+        <li role="presentation">
+          <a href="#">Browse All Playlists...</a>
+        </li>
+        <li role="presentation"><span class="glyphicon glyphicon-comment"></span> SOCIAL</li>
+        <li role="presentation">
+          <a href="forums.html"><strong>Forums</strong></a>
+        </li>
+        <li role="presentation">
+          <a href="private-chat.html">Private Chat <span class="badge badge-style pull-right">2</span></a>
+        </li>
+        <li role="presentation"><span class="glyphicon glyphicon-th-large"></span> MISCELLANEOUS</li>
+        <li role="presentation">
+          <a href="about.html">About</a>
+        </li>
+        <li role="presentation">
+          <a href="#">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+    <!--end of left sidebar-->
+    <!--start of main content-->
+    <div class="col-md-10 col-md-offset-2">
+        <div class = "col-md-10 col-md-offset-1 transparent-background">
+          <div class="row profile-row">
+            <div class="profile-header-container">
+        		    <div class="profile-header-img">
+                    <img class="img-circle" src="img/profile_pic_default.png"/>
+                    <!-- badge -->
+                    <div class="rank-label-container">
+                        <span class="label label-default rank-label username-under-picture">Username</span>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-group pull-left" role="group">
+              <button type="button" class="btn btn-default profile-button">
+                FOLLOW
+              </button>
+            </div>
+            <div class="btn-group pull-right" role="group">
+              <button type="button" class="btn btn-default profile-button">
+                <span class="glyphicon glyphicon-pencil"></span>
+              </button>
+            </div>
+            <!-- end profile header container-->
+        </div>
+        <!-- end of profile pic row-->
+        <div class="row profile-row">
+          <div class="playlist col-md-12 table-responsive profile-playlist">
+            <table class="table table-hover">
+              <thead>
+                <div class="row">
+                  <div class="col-md-8">
+                    <h3 class="playlist-title"><strong>Current Game: </strong>Elite Dangerous</h3>
+                  </div>
+                  <div class="col-md-4">
+                    <img src="img/elite-dangerous.jpg" class="img-responsive" alt="Elite Dangerous" />
+                  </div>
+                </div>
+
+                <div class="btn-toolbar playlist-toolbar" role="toolbar">
+                  <div class="input-group" role="group" aria-label="Playback Buttons">
+                    <button type="button" class="btn btn-default playlist-button">
+                      <span class="glyphicon glyphicon-stop"></span>
+                    </button>
+                    <button type="button" class="btn btn-default playlist-button">
+                      <span class="glyphicon glyphicon-backward"></span>
+                    </button>
+                    <button type="button" class="btn btn-default playlist-button">
+                      <span class="glyphicon glyphicon-play"></span>
+                    </button>
+                    <button type="button" class="btn btn-default playlist-button">
+                      <span class="glyphicon glyphicon-forward"></span>
+                    </button>
+                  </div>
+                  <div class="input-group pull-right" role="group" aria-label="Playlist Options">
+                    <button type="button" class="btn btn-default playlist-button" title="Add Track">
+                      <span class="glyphicon glyphicon-plus-sign"></span>
+                    </button>
+                    <button type="button" class="btn btn-default playlist-button" title="Share Playlist">
+                      <span class="glyphicon glyphicon-share"></span>
+                    </button>
+                    <button type="button" class="btn btn-default playlist-button" title="Options">
+                      <span class="glyphicon glyphicon-cog"></span>
+                    </button>
+                  </div>
+                </div>
+              </thead>
+            </table>
+              </div>
+  	    </div>
+        <!--end of 2nd row-->
+        <div class = "row profile-row">
+          <div class = "col-md-2 col-md-offset-4">
+            Name:
+          </div>
+          <div class = "col-md-4">
+            FirstName LastName
+          </div>
+        </div>
+        <!--end of 3rd row-->
+        <div class = "row profile-row">
+          <div class = "col-md-2 col-md-offset-4">
+            About:
+          </div>
+          <div class = "col-md-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In egestas nisi sed libero pretium efficitur. Phasellus eu laoreet ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut lorem in felis suscipit ultricies nec quis mauris. Curabitur vitae nibh vitae nibh lobortis fringilla. Nullam massa libero, rutrum in tortor pretium, tempus iaculis ipsum. Vivamus ut velit risus. Aliquam non ligula ante. Maecenas eu tincidunt nulla. Suspendisse potenti.
+          </div>
+        </div>
+        <!--end of 4th row-->
+        <div class = "row profile-row">
+          <div class = "col-md-2 col-md-offset-4">
+            Favorite Artists:
+          </div>
+          <div class = "col-md-4">
+            Artist1, Artist2, Artist3, Artist5, Artist6, Artist Seven, Artist Eight
+          </div>
+        </div>
+        <!--end of 5th row-->
+        <div class = "row profile-row">
+          <div class = "col-md-2 col-md-offset-4">
+            Favorite Games:
+          </div>
+          <div class = "col-md-4">
+            Game1, Game2, Game3, Game4, Game Five, Game Six, Game Seven
+          </div>
+        </div>
+        <!--end of 6th row-->
+        <div class = "row profile-row">
+          <div class = "col-md-2 col-md-offset-4">
+            Following:
+          </div>
+          <div class = "col-md-4">
+            Username1, Username2, Username3, Username_Four, Username_Five
+          </div>
+        </div>
+        <!--end of 7th row-->
+        <div class = "row profile-row">
+          <div class = "col-md-2 col-md-offset-4">
+            Followers:
+          </div>
+          <div class = "col-md-4">
+            Username6, Username7, Username8, Username_Nine, Username_Ten
+          </div>
+        </div>
+        <!--end of 8th row-->
+      </div>
+      <!--end of main column-->
+
+    </div>
+  <!--end of main content-->
+  </div>
+  <!--end of row-->
+</div>
+<!--end of container div-->
+
+<!-- </div> -->
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

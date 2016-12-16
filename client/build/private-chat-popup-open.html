@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>BBQ Forte</title>
+
+  <!-- Bootstrap's CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+</head>
+
+<!-- Used to prevent scrolling on this page in particular since most pages use scrollbars -->
+<style type="text/css">
+  html, body {
+    overflow: hidden;
+  }
+</style>
+
+<body>
+  <!-- Our BBQ Forte layout will go here. -->
+
+  <!-- Skeleton Code given in workshop 3: Navigation Bar-->
+  <nav class="navbar navbar-fixed-top navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          <span><img src="img/logo-xsmall.png" alt="BBQ Forte Logo"></span> BBQ Forte
+        </a>
+      </div>
+
+      <!-- On mobile, this div is hidden by default. The user hits the button
+      in the `navbar-header` to see the content of the div.
+      On desktop, this div is visible all of the time. -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+        <!-- Left-aligned items. -->
+        <div class="nav navbar-nav navbar-left">
+
+        </div>
+
+        <!-- Center items. -->
+
+        <!-- Right-aligned items. -->
+        <ul class="nav navbar-nav navbar-right">
+          <div class="btn-group" role="group">
+            <button type="button" class="btn btn-default message-button navbar-btn">
+              <span class="glyphicon glyphicon-envelope"></span>
+            </button>
+            <button type="button" class="btn btn-default dropdown-toggle navbar-btn" data-toggle="dropdown">
+              Hello, Username! <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="username.html">Profile</a></li>
+              <li><a href="#">Settings</a></li>
+              <li><a href="#">Log out</a></li>
+            </ul>
+          </div>
+          <!-- <div class="navbar-text">
+          Hello, Username!
+        </div> -->
+      </ul>
+
+      <form class="navbar-form" role="search">
+        <div class="form-group">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search BBQ Forte">
+            <span class="input-group-addon">
+              <!-- <button type="submit" class="btn btn-default"> -->
+              <span class="glyphicon glyphicon-search"></span>
+              <!-- </button> -->
+            </span>
+          </div>
+        </div>
+      </form>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container -->
+</nav>
+
+<div id="main-content" class="container-fluid">
+  <div class = "row">
+  <!-- Left sidebar -->
+  <div class="col-md-2 sidebar-separator">
+    <ul class="nav nav-pills nav-stacked sidebar-text">
+      <li role="presentation"><a href="username.html">Username</a></li>
+      <li role="presentation"><span class="glyphicon glyphicon-th-list"></span> BROWSE PLAYLISTS</li>
+      <li role="presentation">
+        <a href="playlist.html">Your Saved Playlists</a>
+      </li>
+      <li role="presentation">
+        <a href="#">New Releases</a>
+      </li>
+      <li role="presentation">
+        <a href="#">Most Popular</a>
+      </li>
+      <li role="presentation">
+        <a href="#">Highest Rated</a>
+      </li>
+      <li role="presentation">
+        <a href="#">Rising</a>
+      </li>
+      <li role="presentation">
+        <a href="#">Browse All Playlists...</a>
+      </li>
+      <li role="presentation"><span class="glyphicon glyphicon-comment"></span> SOCIAL</li>
+      <li role="presentation">
+        <a href="forums.html">Forums</a>
+      </li>
+      <li role="presentation">
+        <a href="private-chat.html">Private Chat</a>
+      </li>
+      <li role="presentation"><span class="glyphicon glyphicon-th-large"></span> MISCELLANEOUS</li>
+      <li role="presentation">
+        <a href="about.html">About</a>
+      </li>
+      <li role="presentation">
+        <a href="#">Contact Us</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="col-md-10 col-md-offset-2">
+    <div class="row">
+
+      <div id="recent-convos" class="col-md-3">
+        <div class="panel panel-default">
+          <div class="panel-body panel-title-style img-rounded panel-scroll">
+            <h4>Recent Conversations</h4>
+            <hr>
+
+            <a href="#">
+              <div class="media">
+                <div class="media-left">
+                  PIC
+                </div>
+                <div class="media-body">
+                  <h5 class="media-heading">Bob 1</h5>
+                  <span class="badge badge-style pull-right">2</span>
+                  <p> blah blah blah blah</p>
+                </div>
+              </div>
+            </a>
+            <hr>
+
+            <a href="#">
+              <div class="media convo-active">
+                <div class="media-left">
+                  PIC
+                </div>
+                <div class="media-body">
+                  <h5 class="media-heading">Bob 2</h5>
+                  <p> Hello, this is Bob 2!</p>
+                </div>
+              </div>
+            </a>
+            <hr>
+
+            <a href="#">
+              <div class="media">
+                <div class="media-left">
+                  PIC
+                </div>
+                <div class="media-body">
+                  <h5 class="media-heading">Bob 3</h5>
+                  <p> blah blah blah blah</p>
+                </div>
+              </div>
+            </a>
+            <hr>
+
+            <a href="#">
+              <div class="media">
+                <div class="media-left">
+                  PIC
+                </div>
+                <div class="media-body">
+                  <h5 class="media-heading">Bob 4</h5>
+                  <p> blah blah blah blah</p>
+                </div>
+              </div>
+            </a>
+            <hr>
+
+            <a href="#">
+              <div class="media">
+                <div class="media-left">
+                  PIC
+                </div>
+                <div class="media-body">
+                  <h5 class="media-heading">Bob 5</h5>
+                  <p> blah blah blah blah</p>
+                </div>
+              </div>
+            </a>
+            <hr>
+
+            <a href="#">
+              <div class="media">
+                <div class="media-left">
+                  PIC
+                </div>
+                <div class="media-body">
+                  <h5 class="media-heading">Bob 6</h5>
+                  <p> blah blah blah blah</p>
+                </div>
+              </div>
+            </a>
+            <hr>
+
+            <a href="#">
+              <div class="media">
+                <div class="media-left">
+                  PIC
+                </div>
+                <div class="media-body">
+                  <h5 class="media-heading">Bob 7</h5>
+                  <p> blah blah blah blah</p>
+                </div>
+              </div>
+            </a>
+            <hr>
+
+            <a href="#">
+              <div class="media">
+                <div class="media-left">
+                  PIC
+                </div>
+                <div class="media-body">
+                  <h5 class="media-heading">Bob 8</h5>
+                  <p> blah blah blah blah</p>
+                </div>
+              </div>
+            </a>
+            <hr>
+
+            <a href="#">
+              <div class="media">
+                <div class="media-left">
+                  PIC
+                </div>
+                <div class="media-body">
+                  <h5 class="media-heading">Bob 9</h5>
+                  <p> blah blah blah blah</p>
+                </div>
+              </div>
+            </a>
+            <hr>
+
+            <a href="#">
+              <div class="media">
+                <div class="media-left">
+                  PIC
+                </div>
+                <div class="media-body">
+                  <h5 class="media-heading">Bob 10</h5>
+                  <p> blah blah blah blah</p>
+                </div>
+              </div>
+            </a>
+            <hr>
+
+            <a href="#">
+              <div class="media">
+                <div class="media-left">
+                  PIC
+                </div>
+                <div class="media-body">
+                  <h5 class="media-heading">Bob 11</h5>
+                  <p> blah blah blah blah</p>
+                </div>
+              </div>
+            </a>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="panel panel-default">
+
+          <div class="panel-body panel-title-style chat-split">
+              <a href="private-chat-popup-open.html" class="pull-right"><span class="glyphicon glyphicon-new-window"></span> Portable Chat Window</a>
+              <h4><a href="#">Bob 2</a> <span class="online">●</span></h4>
+          </div>
+
+          <div class="panel-body panel-title-style chat-scroll">
+            <p><div class="chat-bubble left-speech">Hello, this is Bob 2!</div></p>
+            <br>
+            <br>
+            <p><div class="chat-bubble right-speech">Hello, this is Username!</div></p>
+            <br>
+            <br>
+            <p><div class="chat-bubble right-speech">Hello, this is Username! I need to take up two rows of text to show that I work that way so here we go!</div></p>
+            <br>
+            <br>
+            <p><div class="chat-bubble right-speech">Wow that worked great!</div></p>
+            <br>
+            <br>
+            <br>
+            <p style="padding-left: 33px"> ________________________Today________________________ </p>
+            <p><div class="chat-bubble right-speech">Hello, this is Username!</div></p>
+            <br>
+            <br>
+            <p><div class="chat-bubble left-speech">Hello, this is Bob 2!</div></p>
+            <br>
+            <br>
+            <p><div class="chat-bubble right-speech">Hello, this is Username!</div></p>
+            <br>
+            <br>
+            <p><div class="chat-bubble left-speech">Hello, this is Bob 2!</div></p>
+            <br>
+            <br>
+            <p><div class="chat-bubble left-speech">Hello, this is Bob 2!</div></p>
+            <br>
+            <br>
+          </div>
+
+          <div class="panel-footer panel-title-style">
+            <div class="media">
+              <div class="media-body">
+                <div class="input-group">
+                  <textarea class="form-control" style="color: #ffffff" rows="3" placeholder="Enter text here..."></textarea>
+                  <div class="input-group-btn btn-group-vertical" role="group">
+                    <button class="btn btn-default chat-button" type="button">
+                        <span class="glyphicon glyphicon-sunglasses"></span>
+                    </button>
+                    <button class="btn btn-default chat-button" type="button">
+                      <span class="glyphicon glyphicon-pencil"></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="panel panel-default">
+          <div class="panel-body panel-title-style img-rounded user-list user-list-scroll">
+            <ul class="nav nav-tabs">
+              <li role="presentation"><a href="#">Friends</a></li>
+              <li role="presentation" class="chat-tab-active"><a href="#">Genre Help</a></li>
+            </ul>
+            <hr>
+            Rock
+              <ul class="user-list-padding">
+                <a href="#">Rock Expert 1 <span class="online">●</span></a>
+                <br>
+                <a href="#">Rock Expert 2 <span class="online">●</span></a>
+                <br>
+                <a href="#">Rock Expert 3 <span class="away">●</span></a>
+                <br>
+                <a href="#">Rock Expert 4 <span class="away">●</span></a>
+              </ul>
+
+            Electronic
+              <ul class="user-list-padding">
+                <a href="#">Electronic Expert 1 <span class="online">●</span></a>
+                <br>
+                <a href="#">Electronic Expert 2 <span class="online">●</span></a>
+                <br>
+                <a href="#">Electronic Expert 3 <span class="away">●</span></a>
+              </ul>
+
+            Ambient
+              <ul class="user-list-padding">
+                <a href="#">Ambient Expert 1 <span class="online">●</span></a>
+                <br>
+                <a href="#">Ambient Expert 2 <span class="online">●</span></a>
+              </ul>
+
+            Metal
+              <ul class="user-list-padding">
+                <a href="#">Metal Expert 1 <span class="away">●</span></a>
+                <br>
+                <a href="#">Metal Expert 2 <span class="away">●</span></a>
+              </ul>
+
+            Hip-Hop
+              <ul class="user-list-padding">
+                <a href="#">Hip-Hop Expert 1 <span class="online">●</span></a>
+                <br>
+                <a href="#">Hip-Hop Expert 2 <span class="online">●</span></a>
+                <br>
+                <a href="#">Hip-Hop Expert 3 <span class="online">●</span></a>
+              </ul>
+
+            Indie
+              <ul class="user-list-padding">
+                <a href="#">Indie Expert 1 <span class="online">●</span></a>
+                <br>
+                <a href="#">Indie Expert 2 <span class="online">●</span></a>
+                <br>
+                <a href="#">Indie Expert 3 <span class="online">●</span></a>
+                <br>
+                <a href="#">Indie Expert 4 <span class="online">●</span></a>
+                <br>
+                <a href="#">Indie Expert 5 <span class="away">●</span></a>
+              </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="chat-popup-closed">
+    <div class="container-fluid">
+      <div class="row">
+        <a href="#">
+          <div class="col-md-10">
+            Bob 3 <span class="away">●</span>
+          </div>
+        </a>
+        <div class="col-md-2">
+          <a href="#"><span class="glyphicon glyphicon-remove-circle"></span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="chat-popup-open">
+    <div class="container-fluid">
+      <div class="row">
+        <a href="#">
+          <div class="col-md-10">
+            Bob 2 <span class="online">●</span>
+          </div>
+        </a>
+        <div class="col-md-2">
+          <a href="#"><span class="glyphicon glyphicon-remove-circle"></span></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="panel panel-default">
+          <div class="panel-body chat-popup-panel-style chat-popup-scroll">
+            <p><div class="chat-popup-bubble left-speech">Hello, this is Bob 2!</div></p>
+            <br>
+            <br>
+            <p><div class="chat-popup-bubble right-speech">Hello, this is Username!</div></p>
+            <br>
+            <br>
+            <p><div class="chat-popup-bubble right-speech">Hello, this is Username! I need to take up two rows of text to show that I work that way so here we go!</div></p>
+            <br>
+            <br>
+            <p><div class="chat-popup-bubble right-speech">Wow that worked great!</div></p>
+            <br>
+            <br>
+            <br>
+            <p style="padding-left: 22px; font-size: 8pt"> ___________Today___________ </p>
+            <p><div class="chat-popup-bubble right-speech">Hello, this is Username!</div></p>
+            <br>
+            <br>
+            <p><div class="chat-popup-bubble left-speech">Hello, this is Bob 2!</div></p>
+            <br>
+            <br>
+            <p><div class="chat-popup-bubble right-speech">Hello, this is Username!</div></p>
+            <br>
+            <br>
+            <p><div class="chat-popup-bubble left-speech">Hello, this is Bob 2!</div></p>
+            <br>
+            <br>
+            <p><div class="chat-popup-bubble left-speech">Hello, this is Bob 2!</div></p>
+            <br>
+            <br>
+          </div>
+
+          <div class="panel-footer panel-title-style">
+            <div class="media">
+              <div class="media-body">
+                <div class="input-group">
+                  <textarea class="form-control" style="color: #ffffff" rows="1" placeholder="Enter text..."></textarea>
+                  <div class="input-group-btn btn-group-vertical" role="group">
+                    <button class="btn btn-default chat-popup-button" type="button">
+                        <span class="glyphicon glyphicon-sunglasses"></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
